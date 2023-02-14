@@ -1,0 +1,107 @@
+:root {
+    --right: 60vw;
+    --left: 40vw;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-title {
+    font-family: 'Passion One', cursive;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*left side*/
+.image {
+    background-image: url("./assets/fighter.jpeg");
+    background-position: center;
+    color: rgb(247, 247, 247);
+    width: var(--left);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-top: 20vh;
+}
+
+.logo-image {
+    width: 8rem;
+    height: auto;
+}
+
+.logo-title {
+    font-size: 4rem;
+}
+
+/*right side*/
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: var(--right);
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc,
+.form-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin: 80px 0px;
+    padding: 10px 40px 40px 40px;
+    background-color: white;
+    box-shadow: 0px 3px 5px 1px rgb(185, 183, 183);
+}
+
+.form > form {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 40px 40px 40px;
+}
+
+.input-area label {
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+button[type="submit"] {
+    width: fit-content;
+    padding: 12px 24px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.25rem;
+    background-color: rgb(75, 15, 131);
+    border-radius: 12px;
+    border-style: none;
+    box-shadow: 2px 2px 10px 1px rgb(70, 62, 73);
+}
+
+
+
